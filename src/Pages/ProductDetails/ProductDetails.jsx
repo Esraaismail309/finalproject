@@ -30,7 +30,6 @@ export default function ProductDetails() {
   return (
     <div className="container">
       <Helmet>
-       
         <title>{details.title}</title>
       </Helmet>
       <div className="row items-center">

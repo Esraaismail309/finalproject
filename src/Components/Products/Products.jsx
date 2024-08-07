@@ -25,7 +25,11 @@ export default function Products() {
       <div className="row mt-8">
         {products.length > 0 ? (
           products.map((product) => (
-            <Link to={`/productdetails/${product._id}`} key={product._id} className="w-full md:w-1/3 lg:w-1/6 p-4 ">
+            <Link
+              to={`/productdetails/${product._id}`}
+              key={product._id}
+              className="w-full md:w-1/3 lg:w-1/6 p-4 "
+            >
               <ProductItem product={product} />
             </Link>
           ))
